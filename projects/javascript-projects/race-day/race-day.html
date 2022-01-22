@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Race Day</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>Race Day</h1>
+    <p>Here’s how our registration works. There are adult runners (over 18 years of age) and youth runners (under 18 years of age). They can register early or late. Runners are assigned a race number and start time based on their age and registration.</p>
+    <p>Race Number</p>
+    <ul>
+        <li>Early adults receive a race number at or above 1000.</li>
+        <li>All others receive a number below 1000.</li>
+    </ul>
+    <p>Start time</p>
+    <ul>
+        <li>Adult registrants run at 9:30 am or 11:00 am.</li>
+
+        <ul>
+            <li>Early adults run at 9:30 am.</li>
+            <li>Late adults run at 11:00 am.</li>
+        </ul>
+        <li>Youth registrants run at 12:30 pm (regardless of registration).</li>
+
+    </ul>
+    <p>But we didn’t plan for runners that are exactly 18! We’ll ask them to visit the registration desk.</p>
+    <hr>
+    <label for="name">What is your name:</label>
+    <input type="text" id="name" value=""><br><br>
+    <label for="Batch">Choose your batch:</label>
+    <select id="early" name="batch">
+        <option value="true">early</option>
+        <option value="false">late</option>
+    </select><br><br>
+    <label for="age">How old are you?</label>
+    <input type="number" id="age" value=18><br><br>
+    <button onclick="runnerRegistration()">Register</button><br><br>
+    <p id="result"></p>
+    <hr>
+</body>
+
+</html>
