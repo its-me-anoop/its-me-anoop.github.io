@@ -3,7 +3,7 @@
 
 <head>
     <!-- Add project title -->
-    <title>title</title>
+    <title>Rock Paper Scissors</title>
     <script src="script.js"></script>
     <meta charset="UTF-8">
     <meta name=”robots” content="index, follow">
@@ -42,9 +42,39 @@
     </nav>
     <div class="container my-5">
         <!-- Project content goes here -->
+        <h1>Rock, Paper, or Scissors</h1>
+        <p>Rock paper scissors is a classic two player game. Each player chooses either rock, paper, or scissors. The items are compared, and whichever player chooses the more powerful item wins.</p>
+        <p>The possible outcomes are:</p>
+        <ul>
+            <li>Rock destroys scissors.</li>
+            <li>Scissors cut paper.</li>
+            <li>Paper covers rock.</li>
+            <li>If there’s a tie, then the game ends in a draw.</li>
+        </ul>
+        <h2>Let's play the game</h2>
+        <h3>Make a choice</h3>
+        <div class="my-2">
+            <button class="btn btn-outline-primary" onclick="playGame('rock')">Rock</button>
+            <button class="btn btn-outline-primary" onclick="playGame('paper')">Paper</button>
+            <button class="btn btn-outline-primary" onclick="playGame('scissors')">Scissors</button>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div id="your-choice"></div>
+            </div>
+            <div class="col">
+                <div id="computer-choice"></div>
+            </div>
+        </div>
+
+
+
+        <div id='result'></div>
         <hr>
         <h2>Source code</h2>
         <!-- Project source code goes here -->
+        <script src="https://gist.github.com/its-me-anoop/ded9c72e04a8da9e62101c9189f6d60c.js"></script>
     </div>
 
 </body>
