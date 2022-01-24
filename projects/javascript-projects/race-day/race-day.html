@@ -4,43 +4,78 @@
 <head>
     <title>Race Day</title>
     <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name=”robots” content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A simple Javascript project to show the use of conditional statements.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <h1>Race Day</h1>
-    <p>Here’s how our registration works. There are adult runners (over 18 years of age) and youth runners (under 18 years of age). They can register early or late. Runners are assigned a race number and start time based on their age and registration.</p>
-    <p>Race Number</p>
-    <ul>
-        <li>Early adults receive a race number at or above 1000.</li>
-        <li>All others receive a number below 1000.</li>
-    </ul>
-    <p>Start time</p>
-    <ul>
-        <li>Adult registrants run at 9:30 am or 11:00 am.</li>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-primary">
+        <div class="container-fluid mx-5">
+            <a class="navbar-brand" href="#">Anoop Jose</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../../index.html#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../../../index.html#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hire Me</a>
+                    </li>
+                </ul>
 
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h1>Race Day</h1>
+        <p>Here’s how our registration works. There are adult runners (over 18 years of age) and youth runners (under 18 years of age). They can register early or late. Runners are assigned a race number and start time based on their age and registration.</p>
+        <p><strong>Race Number</strong></p>
         <ul>
-            <li>Early adults run at 9:30 am.</li>
-            <li>Late adults run at 11:00 am.</li>
+            <li>Early adults receive a race number at or above 1000.</li>
+            <li>All others receive a number below 1000.</li>
         </ul>
-        <li>Youth registrants run at 12:30 pm (regardless of registration).</li>
+        <p><strong>Start time</strong></p>
+        <ul>
+            <li>Adult registrants run at 9:30 am or 11:00 am.</li>
 
-    </ul>
-    <p>But we didn’t plan for runners that are exactly 18! We’ll ask them to visit the registration desk.</p>
-    <hr>
-    <label for="name">What is your name:</label>
-    <input type="text" id="name" value=""><br><br>
-    <label for="Batch">Choose your batch:</label>
-    <select id="early" name="batch">
-        <option value="true">early</option>
-        <option value="false">late</option>
-    </select><br><br>
-    <label for="age">How old are you?</label>
-    <input type="number" id="age" value=18><br><br>
-    <button onclick="runnerRegistration()">Register</button><br><br>
-    <p id="result"></p>
-    <hr>
-    <h2>Source Code</h2>
-    <script src="https://gist.github.com/its-me-anoop/60ac5a62fbef31a911d5f88facff778f.js"></script>
+            <ul>
+                <li>Early adults run at 9:30 am.</li>
+                <li>Late adults run at 11:00 am.</li>
+            </ul>
+            <li>Youth registrants run at 12:30 pm (regardless of registration).</li>
+
+        </ul>
+        <p>But we didn’t plan for runners that are exactly 18! We’ll ask them to visit the registration desk.</p>
+        <hr>
+        <label for="name">Name:</label>
+        <input type="text" id="name" value="" class="form-control" placeholder="What is your name?">
+        <label for="Batch">Batch:</label>
+        <select id="early" name="batch" class="form-control" placeholder="Choose your batch">
+            <option value="true">early</option>
+            <option value="false">late</option>
+        </select>
+        <label for="age">Age:</label>
+        <input type="number" id="age" class="form-control" placeholder="How old are you?">
+        <button class="btn btn-primary my-2" onclick="runnerRegistration()">Register</button>
+        <div id="result"></div>
+        <hr>
+        <h2>Source Code</h2>
+        <script src="https://gist.github.com/its-me-anoop/60ac5a62fbef31a911d5f88facff778f.js"></script>
+    </div>
+
 </body>
 
 </html>

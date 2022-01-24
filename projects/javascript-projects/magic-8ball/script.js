@@ -2,6 +2,7 @@ function magic8Ball() {
     var userName = document.getElementById("name").value;
     var welcomeMessage = userName ? `Hello ${userName}!` : 'Hello!';
     var userQuestion = document.getElementById("question").value;
+    document.getElementById("welcome").className = 'alert alert-primary my-2';
     document.getElementById("welcome").innerHTML = `${welcomeMessage}`;
     var randomNumber = Math.floor(Math.random() * 8);
     var eightBall = "";
@@ -31,5 +32,7 @@ function magic8Ball() {
             eightBall = 'Signs point to yes';
             break;
     }
+
+    document.getElementById("future").className = (userQuestion) ? 'alert alert-success my-2' : 'alert alert-danger my-2';
     document.getElementById("future").innerHTML = (userQuestion) ? `Question: ${userQuestion}<br><br>Answer: ${eightBall}` : 'Please ask a question';
 }
