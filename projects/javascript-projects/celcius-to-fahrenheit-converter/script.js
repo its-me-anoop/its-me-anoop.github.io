@@ -6,5 +6,7 @@ function celToFah() {
     var fahrenheit = (celsius * (9 / 5)) + 32;
 
     //display he result in a paragraph element
-    document.getElementById("fahrenheit").innerHTML = `<strong>${celsius}</strong> degree Celsius is <strong>${fahrenheit}</strong> degree Fahrenheit`;
+    var div = document.getElementById("fahrenheit");
+    div.className = "alert alert-primary my-2";
+    div.innerHTML = `<strong>${celsius}</strong> degree Celsius is <strong>${fahrenheit}</strong> degree Fahrenheit`;
 }
