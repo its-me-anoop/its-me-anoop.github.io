@@ -1,4 +1,43 @@
 body {
-    background-color: darkslateblue;
-    color: red;
+    background-color: rgb(13, 25, 45);
+    padding: 16px 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hero {
+    padding: 32px;
+}
+
+.hero h6 {
+    color: turquoise;
+    font-size: 16px;
+    font-weight: 100;
+    margin: 0;
+}
+
+.hero h1 {
+    margin: 5px 0;
+    color: white;
+    font-size: 40px;
+}
+
+.hero h2 {
+    margin: 0;
+    color: gray;
+    font-size: 40px;
+}
+
+.hero p {
+    color: darkgray;
+    width: 500px;
+    line-height: 25px;
+}
+
+.hero button {
+    color: turquoise;
+    font-size: 20px;
+    padding: 16px;
+    border: 1px solid turquoise;
+    background-color: transparent;
+    border-radius: 5px;
 }
